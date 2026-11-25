@@ -24,7 +24,7 @@ h2::before, h2::after { content:""; flex:1; border-top:1px solid var(--rule); }
 .portrait img { display:block; width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; object-position:50% 38%; }
 
 main > p.lead { font-size:1.28rem; line-height:1.5; margin-bottom:1.2rem; text-align:left; hyphens:manual; }
-.lead::first-letter { float:left; font-size:3.9rem; line-height:.82; padding:.28rem .5rem 0 0; color:var(--accent); }
+.lead:first-of-type::first-letter { float:left; font-size:3.9rem; line-height:.82; padding:.28rem .5rem 0 0; color:var(--accent); }
 
 /* Photographs */
 figure { margin:0; }
