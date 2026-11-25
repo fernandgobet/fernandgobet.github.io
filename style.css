@@ -1,4 +1,4 @@
-:root { --paper:#faf7ef; --ink:#1f1c17; --muted:#6b645a; --rule:#cfc6b4; --accent:#7a1f24; }
+:root { --paper:#ffffff; --ink:#1f1c17; --muted:#6b645a; --rule:#d8d3c8; --accent:#7a1f24; }
 * { box-sizing:border-box; }
 html { font-size:19px; }
 body { margin:0; background:var(--paper); color:var(--ink); font-family:"EB Garamond", Garamond, "Times New Roman", serif; line-height:1.6; }
@@ -30,17 +30,22 @@ main > p.lead { font-size:1.28rem; line-height:1.5; margin-bottom:1.2rem; text-a
 figure { margin:0; }
 .plate { margin-bottom:1.6rem; }
 .plate img { display:block; width:100%; height:auto; border:1px solid var(--rule); padding:6px; background:#fff; }
-.plate figcaption { font-style:italic; font-size:.88rem; line-height:1.45; color:var(--muted); text-align:center; margin-top:.6rem; }
-.plate figcaption em { font-style:normal; }
+figcaption { font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; text-align:right; margin-top:.65rem; line-height:1.45; }
+figcaption span { display:block; }
+.cap-title { font-size:.62rem; font-weight:600; letter-spacing:.11em; text-transform:uppercase; color:var(--ink); }
+.cap-link { font-size:.64rem; letter-spacing:.02em; color:var(--muted); margin-top:.1rem; }
+.cap-link a { color:var(--accent); }
+.cap-detail { font-size:.68rem; letter-spacing:.02em; color:var(--muted); margin-top:.15rem; }
+figcaption a { color:inherit; border-bottom-color:var(--rule); }
+figcaption a:hover { color:var(--accent); }
 .pair { display:grid; grid-template-columns:1fr 1fr; gap:1.4rem; }
 .pair .plate img { aspect-ratio:3/2; object-fit:cover; }
 .pair .plate.top img { object-position:50% 12%; }
 .inset { float:right; width:17rem; margin:.4rem 0 1rem 2rem; }
 .inset img { display:block; width:100%; height:auto; border:1px solid var(--rule); padding:6px; background:#fff; }
-.inset figcaption { font-style:italic; font-size:.84rem; line-height:1.4; color:var(--muted); text-align:center; margin-top:.5rem; }
 .pair, .plate { clear:both; }
 main > p.aside, main > p.note { text-align:center; font-style:italic; color:var(--muted); hyphens:manual; }
-main > p.aside { font-size:.92rem; margin-top:-.4rem; }
+main > p.aside { font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-style:normal; font-size:.68rem; letter-spacing:.02em; text-align:right; margin-top:-.6rem; }
 
 ul.links { list-style:none; padding:0; margin:0; text-align:center; }
 ul.links li { display:inline; }
